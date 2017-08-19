@@ -8,6 +8,14 @@ var sassMiddleware = require('node-sass-middleware');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var chapter1 = require('./routes/chapter1')
+var chapter2 = require('./routes/chapter2')
+var chapter3 = require('./routes/chapter3')
+var chapter4 = require('./routes/chapter4')
+var chapter5 = require('./routes/chapter5')
+var chapter6 = require('./routes/chapter6')
+var chapter7 = require('./routes/chapter7')
+var chapter8 = require('./routes/chapter8')
 
 var app = express();
 
@@ -16,7 +24,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -30,7 +38,13 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
+app.use('/chapter1', chapter1);
+app.use('/chapter2', chapter2);
+app.use('/chapter3', chapter3);
+app.use('/chapter4', chapter4);
+app.use('/chapter5', chapter5);
+app.use('/chapter6', chapter6);
+app.use('/chapter7', chapter7);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
