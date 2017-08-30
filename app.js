@@ -7,15 +7,13 @@ var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
-var chapter1 = require('./routes/chapter1')
-var chapter2 = require('./routes/chapter2')
-var chapter3 = require('./routes/chapter3')
-var chapter4 = require('./routes/chapter4')
-var chapter5 = require('./routes/chapter5')
-var chapter6 = require('./routes/chapter6')
-var chapter7 = require('./routes/chapter7')
-var chapter8 = require('./routes/chapter8')
+var chapter1 = require('./routes/chapter1');
+var chapter2 = require('./routes/chapter2');
+var chapter3 = require('./routes/chapter3');
+var chapter4 = require('./routes/chapter4');
+var chapter5 = require('./routes/chapter5');
+var chapter6 = require('./routes/chapter6');
+var chapter7 = require('./routes/chapter7');
 
 var app = express();
 

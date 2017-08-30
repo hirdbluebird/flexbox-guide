@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('chapter1', { title: 'What is Flexbox?' });
+  res.render('chapter1');
 });
 
 module.exports = router;
