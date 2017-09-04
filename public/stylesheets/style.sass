@@ -2,6 +2,49 @@ body
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif
 
 a
-  color: #00B7FF
+	color: #00B7FF
+	text-decoration: none
 .rotate
 	transform: rotateX(180deg)
+h1
+	margin:      0px
+	line-height: 50px
+img
+	max-height:  100%
+	max-width:   100%
+	object-fit:  cover
+.slider
+	height:      calc(100vh - 70px)
+	text-align:  center
+	padding-top: 30px
+	overflow-y:  hidden
+.slick-next
+	position:      absolute
+	top:           0
+	right:         0
+	z-index:       5
+.slick-prev
+	position:      absolute
+	top:           0
+	left:          0
+	z-index:       5
+.slick-arrow
+	margin-bottom: 10px
+.chapter-next,
+.chapter-prev
+	position:      absolute
+	bottom:        0
+	width:         50px
+	height:        50px
+	text-align:    center
+	background:    lighten(black, 30%)
+	color:         white
+	font-size:     42px
+	&:hover
+		background: lighten(black, 15%)
+.chapter-prev
+	left: 0
+	border-top-right-radius: 100%
+.chapter-next
+	right: 0
+	border-top-left-radius: 100%
