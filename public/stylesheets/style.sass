@@ -7,6 +7,8 @@ a
 	text-decoration: none
 .rotate
 	transform:   rotateX(180deg)
+.bigger
+	font-size:   1.5em
 h1
 	margin:        0px
 	line-height:   50px
@@ -17,12 +19,27 @@ h1
 img
 	max-height:  100%
 	max-width:   100%
-	object-fit:  cover
+	object-fit:  fill
 .slider
 	height:      calc(100vh - 100px)
 	text-align:  center
 	margin-top:  30px
 	overflow-y:  hidden
+	.split 
+		display: flex
+		align-content: stretch
+		align-items:   stretch
+		.cp_embed_wrapper
+			width:   70%
+		aside
+			width:   30%
+			margin-left: 10px
+			img
+				margin-bottom: 10px
+			p
+				text-align: left
+				font-size:  20px
+
 .slick-next
 	position:      absolute
 	top:           28px
